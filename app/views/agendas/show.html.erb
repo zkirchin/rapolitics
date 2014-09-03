@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @agenda.name %>
+</p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @agenda.song %>
+</p>
+
+<p>
+  <strong>Rapper:</strong>
+  <%= @agenda.rapper_id %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @agenda.video %>
+</p>
+
+<p>
+  <strong>Resource:</strong>
+  <%= @agenda.resource %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @agenda.type_id %>
+</p>
+
+<%= link_to 'Edit', edit_agenda_path(@agenda) %> |
+<%= link_to 'Back', agendas_path %>

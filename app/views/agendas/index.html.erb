@@ -1,0 +1,35 @@
+<h1>Listing agendas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Song</th>
+      <th>Rapper</th>
+      <th>Video</th>
+      <th>Resource</th>
+      <th>Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agendas.each do |agenda| %>
+      <tr>
+        <td><%= agenda.name %></td>
+        <td><%= agenda.song %></td>
+        <td><%= agenda.rapper_id %></td>
+        <td><%= agenda.video %></td>
+        <td><%= agenda.resource %></td>
+        <td><%= agenda.type_id %></td>
+        <td><%= link_to 'Show', agenda %></td>
+        <td><%= link_to 'Edit', edit_agenda_path(agenda) %></td>
+        <td><%= link_to 'Destroy', agenda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Agenda', new_agenda_path %>
