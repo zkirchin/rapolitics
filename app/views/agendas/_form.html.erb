@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :rapper_id %><br>
-    <%= f.number_field :rapper_id %>
+    <%= f.collection_select :rapper_id, Rapper.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :video %><br>
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :type_id %><br>
-    <%= f.number_field :type_id %>
+    <%= f.collection_select :type_id, Type.all, :id, :feeling %>
   </div>
   <div class="actions">
     <%= f.submit %>

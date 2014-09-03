@@ -18,10 +18,10 @@
       <tr>
         <td><%= agenda.name %></td>
         <td><%= agenda.song %></td>
-        <td><%= agenda.rapper_id %></td>
+        <td><%= agenda.rapper.name %></td>
         <td><%= agenda.video %></td>
         <td><%= agenda.resource %></td>
-        <td><%= agenda.type_id %></td>
+        <td><%= agenda.type.feeling %></td>
         <td><%= link_to 'Show', agenda %></td>
         <td><%= link_to 'Edit', edit_agenda_path(agenda) %></td>
         <td><%= link_to 'Destroy', agenda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
