@@ -1,6 +1,9 @@
 class AgendasController < ApplicationController
   before_action :set_agenda, only: [:show, :edit, :update, :destroy]
 
+  def home
+  end
+
   # GET /agendas
   # GET /agendas.json
   def index

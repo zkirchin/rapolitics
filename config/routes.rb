@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: "agendas#home"
+
   resources :agendas
 
   resources :rappers
