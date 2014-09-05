@@ -4,6 +4,10 @@ class AgendasController < ApplicationController
   def home
   end
 
+  def about
+  end
+  
+
   # GET /agendas
   # GET /agendas.json
   def index

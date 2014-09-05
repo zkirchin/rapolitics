@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+
+  get "/about" => "agendas#about"
+
   root to: "agendas#home"
 
   resources :agendas

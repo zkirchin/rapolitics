@@ -1,34 +1,22 @@
-<p id="notice"><%= notice %></p>
+<section class="section resource-container" id="head" >
+  <div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @agenda.name %>
-</p>
+    <div class="row">
+      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center"> 
 
-<p>
-  <strong>Song:</strong>
-  <%= @agenda.song %>
-</p>
+          <h2 class="subtitle agenda">Your new agenda should be:</h2>
+          <h1 class="title resource-title"><%= @agenda.name %></h1>
+          <h2 class="subtitle resources">Inspired by "<%= @agenda.song %>" from <%= @agenda.rapper.name %></h2>
 
-<p>
-  <strong>Rapper:</strong>
-  <%= @agenda.rapper.name %>
-</p>
+          <iframe width="640" height="360" frameborder="0" allowfullscreen src="<%= @agenda.video.strip %>" ></iframe>
 
-<p>
-  <strong>Video:</strong>
-  <iframe width="420" height="315" frameborder="0" allowfullscreen src="<%= @agenda.video.strip %>" ></iframe>
-</p>
+          <h2 class="subtitle resource-subtitle">Resources:</h2>
+          <h3 class="tagline resources2"><%= raw @agenda.resource %></h3>
 
-<p>
-  <strong>Resource:</strong>
-  <%= raw @agenda.resource %>
-</p>
 
-<p>
-  <strong>Type:</strong>
-  <%= @agenda.type.feeling %>
-</p>
-
-<%= link_to 'Edit', edit_agenda_path(@agenda) %> |
-<%= link_to 'Back', agendas_path %>
+  
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  
+  </div>
+</section>

@@ -1,5 +1,5 @@
 html {
-	background:#505D6E url(../images/body4.jpg) no-repeat center center fixed; 
+	background:#505D6E url(rocky.jpg) no-repeat center center fixed; 
 	min-height:100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -124,6 +124,10 @@ body {
 	display: block;
 }
 
+.section.resource-container {
+	padding-top: 0;
+}
+
 
 /********************************************************/
 /*                      Typography                      */
@@ -145,17 +149,49 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#FDF9F4; 
 	line-height:1em;
 }
+
+.title.resource-title {
+	font-size: 8em;
+	margin-bottom: 5px;
+}
 .subtitle { 
 	line-height:.9em;
 	font-size:5.5em;
 	margin-top:0;
 	margin-bottom:40px; 
 }
+
+.subtitle.resources {
+	font-size: 3em;
+}
+
+.subtitle.resource-subtitle {
+	font-size: 3em;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+.subtitle.agenda {
+	font-size: 3em;
+	margin-top:38px;
+	margin-bottom: -20px;
+}
+
 .tagline { 
 	font-size:1.4em;
 	line-height:1.3em;
 	font-weight:normal;
 	margin-bottom:75px;
+}
+
+.tagline.resources1 {
+	margin-bottom: 5px;
+}
+
+.tagline.resources2 {
+	text-align: left;
+	margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
