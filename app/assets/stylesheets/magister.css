@@ -116,7 +116,7 @@ body {
 	top:0;
 } 
 @media (min-width: 768px) {
-	.section { padding-top:160px;}
+	.section { padding-top:50px;}
 }
 
 /* Show one of sections */
@@ -168,7 +168,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .subtitle.resource-subtitle {
 	font-size: 3em;
 	text-align: left;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: -10px;
 }
 

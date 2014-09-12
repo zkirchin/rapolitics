@@ -11,12 +11,23 @@
 
 				<!-- Short introductory (optional) -->
 				<h3 class="tagline">
-					Potentially, the best place to tell people why they are here.<br>
-					So, this is a demo page built to showcase the beauty of the template.
+					Looking for a new issue to care about and get involved with? <br>Let these lyrical geniuses help you out!
 				</h3>
-				
-				<!-- Nice place to describe your site in a sentence or two -->
-				<p><a href="/download/" class="btn btn-default btn-lg">Download template now</a></p>
+
+
+
+				<%= form_for(@agenda) do |f| %>
+
+					<p>Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, class: 'form-control' %>
+					<%= select_tag(Rapper.all) %>
+					<br>
+
+					<p>Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling %>
+					<br>
+
+					<%= f.submit "Get Agenda", class: 'btn btn-default btn-lg' %>
+				<% end %>
+
 	
 			</div> <!-- /col -->
 		</div> <!-- /row -->
