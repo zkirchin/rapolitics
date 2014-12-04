@@ -4,7 +4,7 @@ class AgendasController < ApplicationController
   def home
         # @agenda = Agenda.find(:rapper_id, :type_id)
 
-        @agenda = Agenda.new#(agenda_params)
+        @agenda = Agenda.find(params[:id])
 
     # respond_to do |format|
     #   if @agenda.save
