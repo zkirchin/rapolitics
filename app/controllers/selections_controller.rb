@@ -39,6 +39,7 @@ class SelectionsController < ApplicationController
 
       if @selection.save
         format.html { user_choice }
+        @selection.destroy
       else
         format.html { render :new }
         format.json { render json: @selection.errors, status: :unprocessable_entity }
@@ -66,7 +67,7 @@ class SelectionsController < ApplicationController
   def destroy
     @selection.destroy
     respond_to do |format|
-      format.html { redirect_to selections_url, notice: 'Selection was successfully destroyed.' }
+      format.html { redirect_to selections_url }
       format.json { head :no_content }
     end
   end

@@ -49,7 +49,7 @@ module ApplicationHelper
 
 			@new_id = @list_of_ids.sample
 
-			redirect_to "/agendas/#{@new_id}", notice: "#{@list_of_ids}"
+			redirect_to "/agendas/#{@new_id}"
 		else 
 			@list_of_ids = []
 			rapper_array.each do |a|
@@ -59,7 +59,7 @@ module ApplicationHelper
 
 			@new_id = @list_of_ids.sample
 
-			redirect_to "/agendas/#{@new_id}", notice: "#{@list_of_ids}Your chosen rapper does not have a song that aligns with your political activity. Here is another agenda inspired by a song of your chosen rapper!"
+			redirect_to "/agendas/#{@new_id}", notice: "Your chosen rapper does not have a song that aligns with your political activity. Here is another agenda inspired by a song of your chosen rapper!"
 		end
 
 	end
