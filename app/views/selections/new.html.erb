@@ -1,0 +1,35 @@
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">Rapolitics</h1>
+				<h2 class="subtitle">Getting Involved One Lyric At A Time</h2>
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					Looking for a new issue to care about and get involved with? <br>Let these lyrical geniuses help you out!
+				</h3>
+
+
+
+				<%= form_for(@selection) do |f| %>
+
+					<p>Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, class: 'form-control' %>
+					<br>
+
+					<p>Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling %>
+					<br>
+
+					<%= f.submit "Get Agenda", class: 'btn btn-default btn-lg' %>
+				<% end %>
+
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>

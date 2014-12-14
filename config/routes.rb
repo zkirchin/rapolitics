@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
 
-
   get "/about" => "agendas#about"
 
-  root to: "agendas#home"
+  root to: "selections#new"
 
   resources :agendas
 
   resources :rappers
 
   resources :types
+
+  resources :selections
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

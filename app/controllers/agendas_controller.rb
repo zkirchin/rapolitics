@@ -1,21 +1,21 @@
 class AgendasController < ApplicationController
   before_action :set_agenda, only: [:show, :edit, :update, :destroy]
 
-  def home
-        # @agenda = Agenda.find(:rapper_id, :type_id)
+  # def home
+  #       # @agenda = Agenda.find(:rapper_id, :type_id)
 
-        @agenda = Agenda.find(params[:id])
+  #       @agenda = Agenda.find(params[:id])
 
-    # respond_to do |format|
-    #   if @agenda.save
-    #     format.html { redirect_to @agenda, notice: 'Agenda was successfully created.' }
-    #     format.json { render :show, status: :created, location: @agenda }
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @agenda.errors, status: :unprocessable_entity }
-    #   end
-    # end
-  end
+  #   # respond_to do |format|
+  #   #   if @agenda.save
+  #   #     format.html { redirect_to @agenda, notice: 'Agenda was successfully created.' }
+  #   #     format.json { render :show, status: :created, location: @agenda }
+  #   #   else
+  #   #     format.html { render :new }
+  #   #     format.json { render json: @agenda.errors, status: :unprocessable_entity }
+  #   #   end
+  #   # end
+  # end
 
   def about
   end
