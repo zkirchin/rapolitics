@@ -59,7 +59,7 @@ module ApplicationHelper
 
 			@new_id = @list_of_ids.sample
 
-			redirect_to "/agendas/#{new_id}", notice: "#{@list_of_ids}Your chosen rapper does not have a song that aligns with your political activity. Here is another song by your chosen rapper!"
+			redirect_to "/agendas/#{@new_id}", notice: "#{@list_of_ids}Your chosen rapper does not have a song that aligns with your political activity. Here is another agenda inspired by a song of your chosen rapper!"
 		end
 
 	end
