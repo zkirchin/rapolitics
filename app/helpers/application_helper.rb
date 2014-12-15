@@ -12,8 +12,8 @@ module ApplicationHelper
 	# end
 
 	def user_choice
-		rapper_selction = Proc.new {|agenda| agenda.rapper_id == @selection.rapper_id}
-		rapper_array = Agenda.select(&rapper_selction)
+		rapper_selection = Proc.new {|agenda| agenda.rapper_id == @selection.rapper_id}
+		rapper_array = Agenda.select(&rapper_selection)
 
 		
 		type_selection = Proc.new {|agenda| agenda.type_id == @selection.type_id}
