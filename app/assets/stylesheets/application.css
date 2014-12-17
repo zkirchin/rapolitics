@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+	background:#505D6E url("rocky.jpg") no-repeat center center fixed;
+}
