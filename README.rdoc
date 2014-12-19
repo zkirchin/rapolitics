@@ -1,28 +1,5 @@
-== README
+== Rapolitics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rapolitics is a Ruby on Rails application built to help music fans connect with a social/political agenda inspired by their favorite rap artists. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Please vist http://www.rapolitics.com to find out more!

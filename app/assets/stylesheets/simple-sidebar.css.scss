@@ -26,7 +26,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: rgba(0,0,0,.2);
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -66,12 +66,13 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: rgb(34,34,34);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: rgb(34,34,34);
     background: rgba(255,255,255,0.2);
 }
 
@@ -82,16 +83,18 @@
 
 .sidebar-nav > .sidebar-brand {
     height: 65px;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: rgb(34,34,34);
+    font-family: 'Wire One', Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: rgb(34,34,34);
     background: none;
 }
 
