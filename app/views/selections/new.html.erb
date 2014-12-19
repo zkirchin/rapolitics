@@ -17,14 +17,22 @@
 
 
 				<%= form_for(@selection) do |f| %>
+					<div class="form-group">
 
-					<p>Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, class: 'form-control' %>
-					<br>
+						<p>Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, class: "form-control" %>
+					</div>
 
-					<p>Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling %>
-					<br>
+						<br>
 
-					<%= f.submit "Get Agenda", class: 'btn btn-default btn-lg' %>
+					<div class="form-group">
+
+						<p>Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling, class: "form-control" %>
+
+					</div>
+						<br>
+
+						<%= f.submit "Get Agenda", class: 'btn btn-default btn-lg' %>
+
 				<% end %>
 
 	
