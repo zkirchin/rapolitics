@@ -40,6 +40,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem "bootstrap-sass"
 gem "bootstrap_form"
+gem "activeadmin", github: "activeadmin"
+gem "devise"
 
 group :production do 
 	gem 'pg'
