@@ -39,6 +39,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem "bootstrap-sass"
+gem "bootstrap_form"
 
 group :production do 
 	gem 'pg'
