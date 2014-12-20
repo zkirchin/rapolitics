@@ -16,15 +16,15 @@
 
 
 
-				<%= form_for(@selection) do |f| %>
+				<%= bootstrap_form_for(@selection) do |f| %>
 
-					<p>Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, class: 'form-control' %>
+					<p class="form_label">Select A Rapper:</p> <%= f.collection_select :rapper_id, Rapper.all, :id, :name, hide_label: :true %>
 					<br>
 
-					<p>Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling %>
+					<p class="form_label">Select How you Feel About Elections:</p> <%= f.collection_select :type_id, Type.all, :id, :feeling, hide_label: :true %>
 					<br>
 
-					<%= f.submit "Get Agenda", class: 'btn btn-default btn-lg' %>
+					<strong><%= f.submit "Get Agenda", class: 'btn btn-default btn-lg bold' %></strong>
 				<% end %>
 
 	

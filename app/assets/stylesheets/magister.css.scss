@@ -219,6 +219,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 .btn-lg { 
 	padding:16px 30px;
 	font-size:inherit;
+	font-weight: bold;
 }
 
 .btn-link {
@@ -400,5 +401,14 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color: inherit;
 }
 
+.form-control {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+}
 
+.form_label {
+	font-size: 1.2em;
+}
 
